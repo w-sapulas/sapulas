@@ -42,6 +42,31 @@
             padding: 15px;
             margin-top: 30px;
         }
+        /* ▼▼▼ 写真用に追加したスタイル ▼▼▼ */
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .photo-grid figure {
+            flex: 1 1 calc(50% - 15px);
+            min-width: 250px;
+            margin: 0;
+        }
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+        .photo-grid figcaption {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+        /* ▲▲▲ 写真用に追加したスタイル ▲▲▲ */
     </style>
 </head>
 
@@ -87,6 +112,19 @@
         <li>弁当箱作りと消費期限シール貼り</li>
         <li>食材の下準備</li>
     </ul>
+
+    <!-- ▼▼▼ 大阪事業所の作業風景写真（2枚） ▼▼▼ -->
+    <div class="photo-grid">
+        <figure>
+            <img src="osaka1.JPG" alt="大阪事業所の作業風景1">
+            <figcaption>大阪事業所での作業風景</figcaption>
+        </figure>
+        <figure>
+            <img src="osaka2.JPG" alt="大阪事業所の作業風景2">
+            <figcaption>大阪事業所での作業風景</figcaption>
+        </figure>
+    </div>
+    <!-- ▲▲▲ 大阪事業所の作業風景写真（2枚） ▲▲▲ -->
 </section>
 
 <section>
@@ -102,6 +140,21 @@
         <li>昼食後の片付け</li>
         <li>店内清掃</li>
     </ul>
+
+    <!-- ▼▼▼ 奈良事業所の作業風景写真（2枚）：写真が用意できたら、この下の <!- - と - -> を消すと表示されます ▼▼▼ -->
+    <!--
+    <div class="photo-grid">
+        <figure>
+            <img src="nara1.JPG" alt="奈良事業所の作業風景1">
+            <figcaption>奈良事業所での作業風景</figcaption>
+        </figure>
+        <figure>
+            <img src="nara2.JPG" alt="奈良事業所の作業風景2">
+            <figcaption>奈良事業所での作業風景</figcaption>
+        </figure>
+    </div>
+    -->
+    <!-- ▲▲▲ 奈良事業所の作業風景写真（2枚） ▲▲▲ -->
 </section>
 
 <section id="score">
