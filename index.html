@@ -415,6 +415,94 @@
   @media (max-width: 680px) {
     .scores-grid { grid-template-columns: 1fr; }
   }
+
+  /* ── CHARACTERS ── */
+  .characters-section { background: linear-gradient(135deg, var(--sky-lt) 0%, var(--sage-lt) 100%); overflow: hidden; }
+  .characters-section .section-label { color: var(--sky); }
+  .characters-intro {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 44px 50px;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.05);
+  }
+  .characters-intro .name-origin {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: clamp(1.1rem, 2.6vw, 1.4rem);
+    font-weight: 700; color: var(--warm);
+    line-height: 1.7; margin-bottom: 1.2rem;
+  }
+  .characters-intro .name-origin span { color: var(--sage); }
+  .characters-intro p { color: var(--mid); font-size: 0.95rem; }
+  .characters-intro .message-line {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: 700; color: var(--sky);
+    font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  .characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+  }
+  .character-card {
+    background: var(--white);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 10px 36px rgba(0,0,0,0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1.5px solid var(--sage-md);
+  }
+  .character-card:hover { transform: translateY(-6px); box-shadow: 0 16px 44px rgba(0,0,0,0.12); }
+  .character-img-wrap {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    display: flex; align-items: center; justify-content: center;
+    padding: 28px;
+  }
+  .character-img-wrap img {
+    width: 100%; max-width: 280px; display: block;
+  }
+  .character-body { padding: 28px 30px 32px; }
+  .character-name {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1.5rem; font-weight: 700; color: var(--warm);
+    margin-bottom: 2px;
+  }
+  .character-card.sapie .character-name { color: var(--sky); }
+  .character-card.enna .character-name { color: var(--sage); }
+  .character-en-name {
+    font-size: 0.78rem; color: var(--light); letter-spacing: 0.08em;
+    margin-bottom: 1.2rem; font-weight: 500;
+  }
+  .character-info-list { list-style: none; }
+  .character-info-list li {
+    display: flex; gap: 10px;
+    font-size: 0.9rem; color: var(--mid);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--sage-lt);
+    line-height: 1.6;
+  }
+  .character-info-list li:last-child { border-bottom: none; }
+  .character-info-label {
+    flex-shrink: 0; min-width: 56px;
+    font-weight: 700; font-size: 0.78rem;
+    color: var(--sage); padding-top: 2px;
+  }
+  .character-card.enna .character-info-label { color: var(--sky); }
+  .character-quote {
+    margin-top: 14px;
+    background: var(--sage-lt);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 0.9rem; font-weight: 700; color: var(--warm);
+    text-align: center;
+  }
+  .character-card.enna .character-quote { background: var(--sky-lt); }
+
+  @media (max-width: 680px) {
+    .characters-intro { padding: 32px 26px; }
+  }
 </style>
 </head>
 <body>
@@ -424,6 +512,7 @@
   <div class="nav-logo">Sapulas</div>
   <ul class="nav-links">
     <li><a href="#about">事業内容</a></li>
+    <li><a href="#characters">キャラクター</a></li>
     <li><a href="#steps">ステップアップ</a></li>
     <li><a href="#offices">事業所情報</a></li>
     <li><a href="#contact">見学・体験</a></li>
@@ -458,6 +547,59 @@
     <div class="message-card reveal">
       <blockquote>「今できること」から<br>始めましょう</blockquote>
       <p>Sapulasでは、最初から長時間働けなくても大丈夫です。一人ひとりの体調や生活リズムに合わせて、無理なくスタートし、少しずつできることを増やしていきます。<br><br><strong>時間よりも、「続けること」と「自信をつけること」を大切にしています。</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- CHARACTERS -->
+<section class="characters-section" id="characters">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Characters</p>
+      <h2>Sapulasのキャラクターたち</h2>
+      <p class="lead">「サピー」と「エンナ」は、利用者様の「できる」を増やし、一歩一歩を応援する公式キャラクターです。</p>
+    </div>
+
+    <div class="characters-intro reveal">
+      <p class="name-origin">
+        <span>Sapulas（サプラス）</span>は「Support（支援）」と「Plus（プラス）」を組み合わせた言葉です。
+      </p>
+      <p>私たちは障がいのある方が働くことを通じて、自信や喜び、社会とのつながりを育み、一人ひとりの可能性に"プラス"を届ける存在でありたいと考えています。</p>
+      <p class="message-line">「あなたの一歩に、もうひとつの力を。」</p>
+      <p>それがSapulasの想いです。</p>
+    </div>
+
+    <div class="characters-grid">
+      <div class="character-card sapie reveal">
+        <div class="character-img-wrap">
+          <img src="img/sapie.png" alt="サピー｜支援する鳥（Sapulas公式キャラクター）">
+        </div>
+        <div class="character-body">
+          <div class="character-name">サピー</div>
+          <div class="character-en-name">「支援する鳥」 ・ Sapulas公式キャラクター</div>
+          <ul class="character-info-list">
+            <li><span class="character-info-label">誕生日</span><span>9月1日（AND=S開所日）</span></li>
+            <li><span class="character-info-label">性格</span><span>明るい、前向き、世話好き</span></li>
+            <li><span class="character-info-label">特技</span><span>みんなの良いところを見つける</span></li>
+          </ul>
+          <div class="character-quote">「できるを増やそう！」</div>
+        </div>
+      </div>
+
+      <div class="character-card enna reveal">
+        <div class="character-img-wrap">
+          <img src="img/enna.png" alt="エンナ｜利用者を応援する妖精（AND=S公式キャラクター）">
+        </div>
+        <div class="character-body">
+          <div class="character-name">エンナ</div>
+          <div class="character-en-name">「利用者を応援する妖精」 ・ AND=S公式キャラクター</div>
+          <ul class="character-info-list">
+            <li><span class="character-info-label">性格</span><span>優しい、しっかり者</span></li>
+            <li><span class="character-info-label">特技</span><span>困っている人を応援する</span></li>
+          </ul>
+          <div class="character-quote">「あなたらしくで大丈夫。」</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -666,7 +808,7 @@
 <footer>
   <div class="footer-logo">Sapulas</div>
   <p>就労継続支援A型事業所</p>
-  <p style="margin-top:8px">© 2026 Sapulas. All rights reserved.</p>
+  <p style="margin-top:8px">© 2025 Sapulas. All rights reserved.</p>
 </footer>
 
 <script>
